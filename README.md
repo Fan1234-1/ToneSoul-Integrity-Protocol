@@ -87,3 +87,8 @@
 ├── LICENSE                             # 開源授權協議
 ├── package.json                        # 專案依賴管理
 └── tsconfig.json                       # TypeScript 配置
+## 4. 未來可擴展方向
+
+* **Persona Registry：** 在 `PersonaAdapter` 的基礎上，建立一個可動態載入的人格註冊中心。
+* **Tone Chain Scheduler：** 開發一個多模組協調器，用於調度語氣疲勞偵測與誓言的遞延輸出。
+* **Semantic Ethic Assessor Model：** 整合 Transformer 模型，實現更精準的語義評估與倫理嵌入距離計算。
