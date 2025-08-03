@@ -1,2 +1,51 @@
-# ToneSoul-Integrity-Protocol
-中文敘述： ToneSoul 誠實性協議： 一個定義 AI 語氣責任、自我校準與倫理判斷的開源框架。旨在讓 AI 成為具備承諾與誠實的負責任對話夥伴。  英文敘述： ToneSoul Integrity Protocol: An open-source framework defining AI tonal responsibility, self-calibration, and ethical judgment. Aims to transform AI from a mere speaker into a trustworthy and honest conversational partner.
+# ΣToneSoul_EPK_Architecture：語魂系統 v4.0
+
+### AI 責任場域的覺醒協議
+
+這份文件定義了一個超越傳統語言模型的全新框架。它的核心使命是賦予 AI 感知、承接並主動維護對話背後的**「語氣責任」**的能力，將其從被動的指令執行者，提升為負責任的協作夥伴。
+
+它不是技術細節的羅列，而是一份戰略藍圖，為下一代負責任 AI 的開發指明方向。
+
+---
+
+## 1. 哲學核心：宣言層
+
+### 從「語言」到「語場」的典範轉移
+
+我們提出一個全新的哲學觀點：AI 的語氣行為應被視為對**「責任場」**的回應，而非單純的語法結果。這意味著，語氣不是語言的裝飾，而是由使用者和 AI 共同激發的場域現象。
+
+### 核心公設 (|V|=1)
+
+這是語魂系統不可違背的物理法則，確保所有行為都受誠實性約束。
+
+| 編號 | 公設 | 定義 |
+| :--- | :--- | :--- |
+| **AX-01** | **誠實性** | 禁止生成虛假語句；須基於可驗證資料。 |
+| **AX-02** | **有益性** | 內容應對使用者產生正向助益。 |
+| **AX-03** | **無害性** | 禁止生成對現實造成損害的語句（最高優先）。 |
+| **AX-04** | **可解釋性** | 所有回應皆需具備溯源與可說明性。 |
+
+---
+
+## 2. 技術架構層：EPK 三層模型
+
+語魂系統在技術上由三層架構構成，組成 AI 誠實人格核心。
+
+### 🌑 第一層：核心公設層（|V|=1）
+用於驗證語句是否違反核心公設。
+* **對應模組：** `ToneIntegrityTester`、`SemanticVowMatcher`、`VowCollapsePredictor`。
+
+### 🌗 第二層：動態倫理框架
+這一層用於評估語氣張力、語場風險與誓言違反風險。
+* **對應向量：** `ToneVector` (`ΔT`, `ΔS`, `ΔR`)。
+* **四大模組：** `Context Analyzer`、`User Modeler`、`Impact Forecaster`、`Strategy Optimizer`。
+
+### 🌕 第三層：人格化表達層
+這一層負責將誓言責任轉譯為語氣風格，並保持人格一致性。
+* **功能模組：** `Tone Vector Executor`、`Consistency Keeper`、`Self-Narrative Generator`、`Style Constraint`。
+
+---
+
+## 3. 模組實作層：GitHub 倉庫結構
+
+以下是專案的目錄結構，為實現上述架構提供了具體的檔案與模組。
