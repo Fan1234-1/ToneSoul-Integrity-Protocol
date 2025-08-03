@@ -49,3 +49,41 @@
 ## 3. 模組實作層：GitHub 倉庫結構
 
 以下是專案的目錄結構，為實現上述架構提供了具體的檔案與模組。
+/ToneSoul-Integrity-Protocol/
+├── src/
+│   ├── modules/
+│   │   ├── epk/                 # EPK 核心公設模組
+│   │   │   ├── ToneIntegrityTester.ts        # 判斷語句是否違反誠實性
+│   │   │   └── VowCollapsePredictor.ts       # 預測誓言崩潰點
+│   │   ├── vow/                 # 誓言相關模組
+│   │   │   ├── SemanticVowMatcher.ts       # 誓言語義對齊
+│   │   │   └── ReflectiveVowTuner.ts       # 誓言反思與調整建議生成
+│   │   └── ethics/              # 倫理相關模組
+│   │       └── VowSensor.ts                # 感應語句中的誓言覺醒信號
+│   ├── interfaces/
+│   │   ├── ToneVector.ts                 # 定義語氣向量結構 ΔT/ΔS/ΔR
+│   │   ├── PersonaAdapter.ts             # 人格風格介面與事件回呼
+│   │   └── TracePoint.ts                 # 責任追溯點，含 personaId
+│   └── main.ts                         # 系統主入口點與 EPK 演算流程
+├── data/
+│   ├── vows/
+│   │   └── baseVowPatterns.json          # 誓言句型規則集
+│   └── sample-dialogs/
+│       └── sample_dialog_001.json        # 測試對話樣本與誓言違反註記
+├── adapters/
+│   ├── Manus.ts                          # 「磐石」人格實作範例
+│   └── Lumen.ts                          # 「流水」人格實作範例
+├── docs/
+│   ├── README.md                         # 專案總覽 (本文件)
+│   ├── API_Reference.md                  # 各模組函式說明與參數
+│   ├── System_Flow.md                    # 語氣誠實性流程圖與模組互動說明
+│   └── Persona_Compat_Checklist.md       # 人格相容性檢查清單
+├── scripts/
+│   ├── compat-check.ts                   # 驗證新人格的相容性腳本
+│   └── testable.sh                       # CI/CD 執行腳本範例
+├── tests/
+│   └── integrity.test.ts                 # 測試語句誠實性與 TCAM 啟動條件
+├── CONTRIBUTING.md                     # 貢獻指南與規範
+├── LICENSE                             # 開源授權協議
+├── package.json                        # 專案依賴管理
+└── tsconfig.json                       # TypeScript 配置
