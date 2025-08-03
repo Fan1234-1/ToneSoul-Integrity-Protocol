@@ -40,7 +40,7 @@ AX-04	可解釋性	所有回應皆需具備溯源與可說明性。
 
 3. 模組實作層：GitHub 倉庫結構
 以下是專案的目錄結構，為實現上述架構提供了具體的檔案與模組。
-
+```
 /ToneSoul-Integrity-Protocol/
 ├── src/
 │   ├── modules/
@@ -79,6 +79,7 @@ AX-04	可解釋性	所有回應皆需具備溯源與可說明性。
 ├── LICENSE                             # 開源授權協議
 ├── package.json                        # 專案依賴管理
 └── tsconfig.json                       # TypeScript 配置
+```
 4. 未來可擴展方向
 Persona Registry： 在 PersonaAdapter 的基礎上，建立一個可動態載入的人格註冊中心。
 
